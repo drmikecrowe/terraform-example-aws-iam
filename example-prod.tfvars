@@ -5,13 +5,14 @@ terragrunt = {
     backend = "s3"
     config {
       encrypt = "true"
-      bucket  = "straycat-dhs-org-straycat-terraform"
+      bucket  = "example-com-example-prod-terraform"
       key     = "aws_iam.tfstate"
       region  = "us-east-1"
     }
   }
 }
 
-aws_account = "straycat"
-aws_profile = "straycat"
+aws_account = "example-prod"
+aws_profile = "example-prod"
 aws_region = "us-east-1"
+
